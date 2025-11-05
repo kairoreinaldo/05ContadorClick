@@ -1,0 +1,116 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                /* camada escura por cima */
+                url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3VkZXNpdW5keHBtN3QwZmllOTVpM21uMHpybGpib3VnMnJ6eHVldSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YkOInyW8oZHPvI8aDW/giphy.gif);
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            /* fundo semi-transparente */
+            backdrop-filter: blur(10px);
+            /* desfoca o fundo atrás */
+            -webkit-backdrop-filter: blur(10px);
+            /* compatibilidade com Safari */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            min-width: 380px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            /* borda suave */
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        #contador {
+            font-size: 80px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        #diminuir {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        #diminuir:hover {
+            background: #ee5a52;
+            transform: scale(1.05);
+        }
+
+        #resetar {
+            background: #95a5a6;
+            color: white;
+        }
+
+        #resetar:hover {
+            background: #7f8c8d;
+            transform: scale(1.05);
+        }
+
+        #aumentar {
+            background: #51cf66;
+            color: white;
+        }
+
+        #aumentar:hover {
+            background: #40c057;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .positivo {
+            color: #51cf66 !important;
+        }
+
+        .negativo {
+            color: #ff6b6b !important;
+        }
+
+        .zero {
+            color: #95a5a6 !important;
+        }
