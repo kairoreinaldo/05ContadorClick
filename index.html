@@ -7,8 +7,14 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- CLASS NO JS NESSE PROJETO SAO BOTOES E CONTADOR  -->
     <div class="container">
         <h1>Contador Simples</h1>
+        <!-- No seu contador, como você só tem um display de número, usar id="contador" é semanticamente mais correto. Ele comunica a intenção de que este é um componente único. Se você precisasse usar JavaScript para atualizar o valor, getElementById seria a escolha mais natural.Se, no futuro, você decidisse ter vários contadores na mesma página, aí sim seria o momento ideal para mudar para uma class. -->
+         <!--  -->
+        <!-- ID NO JS NESSE PROJETO SAO CONTADOR E NUMEROS  -->
+         <!-- USO ID PENSAR EM USAR PORQUE NO JS  Se você está construindo uma aplicação web onde elementos específicos precisam ser encontrados, modificados ou controlados dinamicamente pelo JavaScript, usar ids é uma prática recomendada por sua unicidade, eficiência e clareza na manipulação do DOM.Embora você possa usar getElementsByClassName e depois selecionar o primeiro item da coleção, ou usar querySelector com um seletor de classe, getElementById para um elemento único é geralmente mais direto e performático, e é o método mais comum para essa finalidade. -->
+          
         <div id="contador">0</div>
         <div class="botoes">
             <button id="diminuir">- Diminuir</button>

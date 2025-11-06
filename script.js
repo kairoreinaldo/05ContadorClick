@@ -1,4 +1,5 @@
 // 1º PASSO SELECIONAR OS ELEMENTOS DO HTML
+//ESSA ByID... AQUI JS / NO HTML É ID=.... NO CSS É (#)
 const contadorElemento = document.getElementById('contador')
 const btnDiminuir = document.getElementById('diminuir')
 const btnResetar = document.getElementById('resetar')
@@ -10,7 +11,7 @@ let contador = 0;
 // 3 º PASSO CRIAR UM FUNÇÃO DA COR BASEADA NO VALOR
 
 function atualizarCor() {
-
+//ESSA CLASSNAME... AQUI JS / NO HTML É UMA CLASS=... NO CSS É (.)
     if (contador > 0) {
         contadorElemento.className = 'positivo';
     } else if
